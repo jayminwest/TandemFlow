@@ -7,8 +7,6 @@ const CaseStudy = ({ title, description, result }) => (
     <p className="text-sm md:text-base text-gray-300 mb-4 md:mb-6 transition-colors duration-300 group-hover:text-white">{description}</p>
     <p className="text-sm md:text-base font-semibold text-teal-500 mb-2 md:mb-4 transition-colors duration-300 group-hover:text-teal-300">{result}</p>
     <div className="flex items-center text-sm md:text-base text-gray-400 transition-colors duration-300 group-hover:text-white">
-      <span className="mr-2">Read more</span>
-      <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
     </div>
   </div>
 );

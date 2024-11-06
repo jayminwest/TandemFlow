@@ -1,0 +1,105 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.5);
+}
+
+/* Section Styles */
+.section {
+  @apply py-16 md:py-20;
+}
+
+.section-inner {
+  @apply container mx-auto px-4;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-medium text-center mb-8 md:mb-12 text-teal-500;
+}
+
+.section-subtitle {
+  @apply text-xl md:text-2xl font-medium text-center mb-6 md:mb-8 text-gray-300;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-dark-300 p-6 md:p-8 rounded-lg shadow-md transition-all duration-300;
+}
+
+/* Responsive Grid */
+.responsive-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  @apply absolute right-0 mt-2 py-2 w-48 bg-dark-300 rounded-md shadow-xl z-20;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dropdown-menu.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.dropdown-menu-item {
+  @apply block px-4 py-2 text-sm text-gray-300 hover:bg-dark-200 hover:text-teal-500 transition-colors duration-200;
+}
+
+/* ... (keep other existing styles) ... */

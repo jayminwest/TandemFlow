@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLightbulb, FaCogs, FaRocket, FaChartLine } from 'react-icons/fa';
+import { FaUserPlus, FaClipboardList, FaComments } from 'react-icons/fa';
 
 const Step = ({ icon, title, description }) => (
   <div className="flex items-start mb-8 fade-in">
@@ -14,24 +14,19 @@ const Step = ({ icon, title, description }) => (
 const HowWeWork = () => {
   const steps = [
     {
-      icon: <FaLightbulb />,
-      title: "Discovery",
-      description: "We analyze your current processes and identify automation opportunities."
+      icon: <FaUserPlus />,
+      title: "Quick Onboarding",
+      description: "Begin with a streamlined 30-minute onboarding call - the only required meeting in our process. We can schedule your session as early as tomorrow."
     },
     {
-      icon: <FaCogs />,
-      title: "Design & Development",
-      description: "Our experts create custom automation solutions tailored to your needs."
+      icon: <FaClipboardList />,
+      title: "Project Management",
+      description: "Utilize our intuitive ClickUp board for project tracking. Add tasks, track progress, and communicate updates - or let our team handle the project management for you."
     },
     {
-      icon: <FaRocket />,
-      title: "Implementation",
-      description: "We seamlessly integrate the new systems into your existing workflow."
-    },
-    {
-      icon: <FaChartLine />,
-      title: "Optimization",
-      description: "We continuously monitor and improve the performance of your automation."
+      icon: <FaComments />,
+      title: "Ongoing Support",
+      description: "Benefit from optional 45-minute weekly consultation sessions where we can collaborate on strategy, brainstorm solutions, and refine processes."
     }
   ];
 

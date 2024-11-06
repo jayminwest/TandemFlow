@@ -16,19 +16,19 @@ const CaseStudy = ({ title, description, result }) => (
 const CaseStudies = () => {
   const caseStudies = [
     {
-      title: "E-commerce Giant",
-      description: "Implemented an AI-driven inventory management system.",
-      result: "Reduced stockouts by 35% and increased sales by 20%"
+      title: "AI Compliance for FAANG",
+      description: "Trained and implemented cutting-edge Large Language Models (LLMs) to enhance AI compliance frameworks.",
+      result: "Successfully deployed across multiple FAANG companies"
     },
     {
-      title: "Healthcare Provider",
-      description: "Automated patient scheduling and follow-up processes.",
-      result: "Improved patient satisfaction by 40% and reduced admin work by 60%"
+      title: "Niche Marketplace Platform",
+      description: "Built a specialized e-commerce platform focusing on community engagement and seamless user experience.",
+      result: "Enhanced user engagement and established thriving community marketplace"
     },
     {
-      title: "Financial Services Firm",
-      description: "Developed a custom risk assessment automation tool.",
-      result: "Decreased processing time by 75% and improved accuracy by 30%"
+      title: "Sports Prediction Engine",
+      description: "Developed advanced predictive modeling system for sports outcomes using machine learning.",
+      result: "Achieved 76.4% prediction accuracy, surpassing industry standards"
     }
   ];
 

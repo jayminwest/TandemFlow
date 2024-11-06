@@ -24,39 +24,40 @@ const PricingTier = ({ name, price, features, isPopular }) => (
 );
 
 const Pricing = () => {
-  const tiers = [
+  const plans = [
     {
       name: "Starter",
-      price: 499,
+      price: 449,
       features: [
-        "1 Automation Process",
+        "3 Automation Processes",
         "Basic Analytics",
         "Email Support",
-        "1 User License"
+        "Bi-Weekly Consultation Calls",
+        "Perfect for startups and small businesses"
       ]
     },
     {
       name: "Professional",
-      price: 999,
+      price: 749,
       features: [
-        "3 Automation Processes",
-        "Advanced Analytics",
+        "5 Automation Processes",
+        "Detailed Analytics",
         "Priority Support",
-        "3 User Licenses",
-        "API Access"
+        "Weekly Consultation Calls",
+        "Enhanced Process Monitoring"
       ],
       isPopular: true
     },
     {
-      name: "Enterprise",
-      price: 1999,
+      name: "Custom Plan",
+      price: null,
       features: [
-        "Unlimited Automation Processes",
-        "Custom Analytics",
-        "24/7 Dedicated Support",
-        "Unlimited User Licenses",
-        "API Access",
-        "Custom Integrations"
+        "Tailored Automation Solutions",
+        "Custom Analytics Package",
+        "Dedicated Support Team",
+        "Flexible Consultation Schedule",
+        "Scalable Process Integration",
+        "Enterprise-Grade Solutions"
       ]
     }
   ];
@@ -66,8 +67,8 @@ const Pricing = () => {
       <div className="section-inner">
         <h2 className="section-title slide-up">Pricing Plans</h2>
         <div className="responsive-grid">
-          {tiers.map((tier, index) => (
-            <PricingTier key={index} {...tier} />
+          {plans.map((plan, index) => (
+            <PricingTier key={index} {...plan} />
           ))}
         </div>
       </div>

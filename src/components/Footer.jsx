@@ -10,9 +10,6 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4 text-teal-500">TandemFlow</h3>
             <p className="mb-4 text-gray-300">Automating success for businesses worldwide.</p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-teal-500 transition duration-300 hover-scale"><FaLinkedinIn /></a>
-            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4 text-teal-500">Quick Links</h4>
@@ -28,9 +25,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4 text-teal-500">Contact Us</h4>
-            <p className="flex items-center mb-2 text-gray-300"><FaEnvelope className="mr-2 text-teal-500" /> info@tandemflow.com</p>
-            <p className="text-gray-300">123 Automation Street</p>
-            <p className="text-gray-300">Tech City, TC 12345</p>
+            <p className="flex items-center mb-2 text-gray-300"><FaEnvelope className="mr-2 text-teal-500" /> info@tandemflow.com</p> 
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4 text-teal-500">Newsletter</h4>

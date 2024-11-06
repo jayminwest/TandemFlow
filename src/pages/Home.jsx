@@ -13,9 +13,9 @@ const Home = () => {
       <Hero />
       <Services />
       <div className="section-divider" />
-      <CaseStudies />
-      <div className="section-divider" />
       <HowWeWork />
+      <div className="section-divider" />
+      <CaseStudies />
       <div className="section-divider" />
       <Pricing />
       <div className="section-divider" />

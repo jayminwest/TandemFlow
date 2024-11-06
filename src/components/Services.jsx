@@ -18,13 +18,13 @@ const Services = () => {
     },
     {
       icon: <FaChartLine />,
-      title: "Data Analytics",
+      title: "Advanced Analytics",
       description: "Harness the power of your data with our advanced analytics and reporting tools."
     },
     {
       icon: <FaRobot />,
       title: "AI Integration",
-      description: "Leverage artificial intelligence to make smarter decisions and predict future trends."
+      description: "Leverage artificial intelligence to custom fit your business processes."
     }
   ];
 

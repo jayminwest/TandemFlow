@@ -26,11 +26,11 @@ const FAQ = () => {
     },
     {
       question: "How long does it take to implement an automation solution?",
-      answer: "The implementation time varies depending on the complexity of the project. Simple automations can be set up in a few weeks, while more complex systems might take a few months. We'll provide a detailed timeline during our initial consultation."
+      answer: "The implementation time varies depending on the complexity of the project. Simple automations can be set up in a few days, while more complex systems might take a few weeks. We'll provide a detailed timeline during our initial consultation."
     },
     {
       question: "Is my data safe with your automation solutions?",
-      answer: "Absolutely. We take data security very seriously and implement industry-standard encryption and security measures to protect your information. We also comply with relevant data protection regulations."
+      answer: "Absolutely. We take data security very seriously and follow industry standard security measures to protect your information. We also comply with relevant data protection regulations."
     },
     {
       question: "Can your solutions integrate with my existing software?",

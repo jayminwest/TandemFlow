@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark-300 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 text-teal-500">TandemFlow</h3>
             <p className="mb-4 text-gray-300">Automating success for businesses worldwide.</p>
@@ -26,14 +26,6 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-teal-500">Contact Us</h4>
             <p className="flex items-center mb-2 text-gray-300"><FaEnvelope className="mr-2 text-teal-500" /> info@tandemflow.com</p> 
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-teal-500">Newsletter</h4>
-            <p className="mb-4 text-gray-300">Stay updated with our latest news and offers.</p>
-            <form className="flex">
-              <input type="email" placeholder="Your email" className="py-2 px-4 rounded-l-full w-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-teal-500" />
-              <button type="submit" className="bg-teal-500 py-2 px-4 rounded-r-full hover:bg-teal-600 transition duration-300 hover-lift">Subscribe</button>
-            </form>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">

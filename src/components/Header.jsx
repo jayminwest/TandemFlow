@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import TypeformButton from './TypeformButton';
 
@@ -29,28 +29,32 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Services', href: '/#services' },
-    { name: 'Case Studies', href: '/#case-studies' },
-    { name: 'How We Work', href: '/#how-we-work' },
-    { name: 'Pricing', href: '/#pricing' },
-    { name: 'FAQ', href: '/#faq' },
+    { name: 'Services', to: 'services' },
+    { name: 'How We Work', to: 'how-we-work' },
+    { name: 'Case Studies', to: 'case-studies' },
+    { name: 'Pricing', to: 'pricing' },
+    { name: 'FAQ', to: 'faq' },
   ];
 
   return (
     <header className={`bg-dark-200 shadow-md sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-medium text-teal-500 hover:text-teal-400 transition duration-300">TandemFlow</Link>
+          <ScrollLink to="hero" smooth={true} duration={500} className="text-2xl font-medium text-teal-500 hover:text-teal-400 transition duration-300 cursor-pointer">
+            TandemFlow
+          </ScrollLink>
           
           <nav className="hidden lg:flex space-x-6">
             {navItems.map((item) => (
-              <Link 
+              <ScrollLink 
                 key={item.name} 
-                to={item.href} 
-                className="text-gray-300 hover:text-teal-500 transition duration-300 hover-lift"
+                to={item.to} 
+                smooth={true} 
+                duration={500} 
+                className="text-gray-300 hover:text-teal-500 transition duration-300 hover-lift cursor-pointer"
               >
                 {item.name}
-              </Link>
+              </ScrollLink>
             ))}
           </nav>
           
@@ -67,14 +71,16 @@ const Header = () => {
               </button>
               <div className={`dropdown-menu ${isMenuOpen ? 'slide-down' : 'hidden'}`}>
                 {navItems.map((item) => (
-                  <Link
+                  <ScrollLink
                     key={item.name}
-                    to={item.href}
-                    className="dropdown-menu-item"
+                    to={item.to}
+                    smooth={true}
+                    duration={500}
+                    className="dropdown-menu-item cursor-pointer"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
-                  </Link>
+                  </ScrollLink>
                 ))}
               </div>
             </div>

@@ -21,7 +21,7 @@ const HowWeWork = () => {
     {
       icon: <FaClipboardList />,
       title: "Project Management",
-      description: "Utilize our intuitive ClickUp board for project tracking. Add tasks, track progress, and communicate updates - or let our team handle the project management for you."
+      description: "Utilize a shared project tracking tool. Add tasks, track progress, and communicate updates - or let our team handle the project management for you."
     },
     {
       icon: <FaComments />,
